@@ -1,1 +1,15 @@
-<paste log output from Kubernetes-mediated prediction, here>
+dan@Johnny0b101:~/DevOps_Microservices/project-ml-microservice-kubernetes$ ./run_kubernetes.sh 
+deployment.apps/udacity-aws-devops-ml-app created
+NAME                                         READY   STATUS              RESTARTS   AGE
+udacity-aws-devops-ml-app-6559bd4b8d-j9v7x   0/1     ContainerCreating   0          0s
+Waiting for container to start...
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+
+dan@Johnny0b101:~/DevOps_Microservices/project-ml-microservice-kubernetes$ ./make_prediction.sh 
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
