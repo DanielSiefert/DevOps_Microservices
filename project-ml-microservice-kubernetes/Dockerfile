@@ -8,7 +8,6 @@ WORKDIR /opt/predictor
 # Copy source code to working directory
 COPY ./app.py /opt/predictor/app.py
 COPY model_data/ /opt/predictor/model_data/
-RUN ls -la /opt/predictor
 COPY ./requirements.txt /tmp/requirements.txt
 ## Step 3:
 # Install packages from requirements.txt
