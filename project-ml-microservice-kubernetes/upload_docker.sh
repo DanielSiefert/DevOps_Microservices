@@ -5,11 +5,13 @@
 
 # Step 1:
 # Create dockerpath
-# dockerpath=<your docker ID/path>
+dockerpath=danielsiefert/udacity-aws-devops-ml-app
 
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
+docker login --username=danielsiefert 
 
 # Step 3:
 # Push image to a docker repository
+docker push danielsiefert/udacity-aws-devops-ml-app:latest
